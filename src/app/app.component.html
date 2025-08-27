@@ -1,11 +1,13 @@
 <mat-toolbar color="primary">
   <span>Cadastro de clientes</span>
   <span class="spacer"></span>
-  <a routerLink="/cadastro">
+  <div fxLayout="row" fxLayoutGap="16px">
+    <button mat-flat-button routerLink="/cadastro">
     <mat-icon fontIcon="feed"></mat-icon>
-    Cadastro</a>
-  <a routerLink="/consulta">
+    Cadastro</button>
+    <button mat-flat-button routerLink="/consulta">
       <mat-icon fontIcon="search"></mat-icon>
-    Consulta</a>
+      Consulta</button>
+  </div>
 </mat-toolbar>
 <router-outlet />
